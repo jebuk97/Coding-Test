@@ -4,7 +4,7 @@ if n == 0:
     print(1)
 else:
     ps = list(map(int, input().split()))
-    if ps[len(ps)-1] >= new_p and len(ps) == p:
+    if ps[len(ps)-1] >= new_p and n == p:
         print(-1)
     else:
         for i, pp in enumerate(ps):
