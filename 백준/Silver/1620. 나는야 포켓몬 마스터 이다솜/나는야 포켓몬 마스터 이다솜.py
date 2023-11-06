@@ -1,12 +1,13 @@
-N, M = map(int, input().split())
+import sys
+N, M = map(int, sys.stdin.readline().strip().split())
 pokemons = {}
 pokekey = []
 for i in range(N):
-    p = input()
+    p = sys.stdin.readline().strip()
     pokemons[p] = i+1
     pokekey.append(p)
 for _ in range(M):
-    q = input()
+    q = sys.stdin.readline().strip()
     if q.isalpha() == True:
         print(pokemons[q])
     else:
