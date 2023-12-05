@@ -1,4 +1,5 @@
-n = int(input())
+import sys
+n = int(sys.stdin.readline())
 if n == 1:
     print(0)
 else:
@@ -12,7 +13,7 @@ else:
         vertex[i] = []
 
     for i in range(n-1):
-        a, b, c = map(int, input().split())
+        a, b, c = map(int, sys.stdin.readline().split())
         node[a].append(b)
         node[b].append(a)
         vertex[a].append(c)
