@@ -1,116 +1,173 @@
 <div id="study_tab1" class="tab__pane tab-active" role="tabpanel" aria-labelledby="study_tab1" aria-hidden="false">
-                                    <div class="detail-con-box">
-                                        <h5 class="h5 detail-con-tit">언어별 시간/메모리</h5>
-                                        <div class="table-wrap">
-                                            <table class="table">
-                                                <caption>언어별 시간/메모리 표</caption>
-                                                <thead>
-                                                <tr>
-                                                    <th scope="col" id="t-lang">언어</th>
-                                                    <th scope="col" id="t-time">시간</th>
-                                                    <th scope="col" id="t-memory">메모리</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td headers="t-lang">JavaScript</td>
-                                                    <td headers="t-time">1초</td>
-                                                    <td headers="t-memory">1024MB</td>
-                                                </tr>
-                                                <tr>
-                                                    <td headers="t-lang">C</td>
-                                                    <td headers="t-time">1초</td>
-                                                    <td headers="t-memory">1024MB</td>
-                                                </tr>
-                                                <tr>
-                                                    <td headers="t-lang">C++</td>
-                                                    <td headers="t-time">1초</td>
-                                                    <td headers="t-memory">1024MB</td>
-                                                </tr>
-                                                <tr>
-                                                    <td headers="t-lang">Java</td>
-                                                    <td headers="t-time">1초</td>
-                                                    <td headers="t-memory">1024MB</td>
-                                                </tr>
-                                                <tr>
-                                                    <td headers="t-lang">Python</td>
-                                                    <td headers="t-time">1초</td>
-                                                    <td headers="t-memory">1024MB</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div>
-                                            <p class="detail-con-txt">
-                                            </p><div style="font-size: 1.6rem"><p class="qti-paragraph" dir="ltr"><span>당신은 인사팀 직원으로, 각 직원의 근태를 확인하고자 한다.</span><br><br><span>  당신의 회사는 자율출퇴근제를 실시하기 때문에 각 직원이 정확히 몇 시에 출근하는 것은 중요하지 않고, 총 근로 시간이 몇 분인지가 중요하다. 총 근로 시간이 법정근로시간을 초과하지 않아야 하면서, 회사와 직원 사이에 계약한 시간 이상이어야 하기 때문이다.</span><br><br><span>  직원이 하루 동안 근무한 시간은 출근 시각과 퇴근 시각 사이의 시간으로 정의한다. 이 문제에서는 식사 시간 등 근무 외 시간을 근무 시간에서 제외하지 않음에 유의하라.</span><br><br><span>  월요일부터 금요일까지 휴가를 쓰지 않은 직원이 매 요일 언제 출근하고 언제 퇴근했는지가 주어질 때, 이 직원이 5일 동안 총 몇 분을 근무했는지를 구하는 프로그램을 작성하라.</span><br></p></div>
-                                        </div>
-                                        <!-- 공백 추가 -->
-                                        <div style="height: 1rem;"></div>
-                                        <!-- 문제 설명 (SQL) -->
-                                        
-                                    </div>
-                                    <div class="detail-con-box">
-                                        <h5 class="h5 detail-con-tit">제약조건</h5>
-                                        <h1 class="detail-con-txt"><p class="qti-paragraph" dir="ltr"><span>직원은 밤을 새서 일하지 않았다. 즉, 출근 시각과 퇴근 시각은 00:00 이후, 24:00 이전에 이루어졌다.</span></p><p class="qti-paragraph" dir="ltr"><br></p><p class="qti-paragraph" dir="ltr"><span>출퇴근 시각은 HH:MM과 같은 형식으로 주어진다.</span><br><span>  HH는 00, 01, 02, .., 22, 23 중 하나이다.</span><br><span>  MM는 00, 01, 02, .., 58, 59 중 하나이다.</span><br><span>  직원은 매일 1분 이상은 일하였다. </span><br></p></h1>
-                                    </div>
 
-                                    <div class="detail-con-box">
-                                        <h5 class="h5 detail-con-tit">입력형식</h5>
-                                        <h1 class="detail-con-txt"><p class="qti-paragraph" dir="ltr"><span>첫 번째 줄에는 월요일에 출근한 시각과 월요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span><br><span>  두 번째 줄에는 화요일에 출근한 시각과 화요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span><br><span>  세 번째 줄에는 수요일에 출근한 시각과 수요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span><br><span>  네 번째 줄에는 목요일에 출근한 시각과 목요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span><br><span>  다섯 번째 줄에는 금요일에 출근한 시각과 금요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span><br></p></h1>
-                                    </div>
-                                    <div class="detail-con-box">
-                                        <h5 class="h5 detail-con-tit">출력형식</h5>
-                                        <h1 class="detail-con-txt"><p class="qti-paragraph" dir="ltr"><span>첫 번째 줄에 직원의 총 근무 시간을 분 단위로 출력한다.</span><br></p></h1>
-                                    </div>
+<div class="detail-con-box">##### 언어별 시간/메모리
 
-                                    <div>
-                                        <div class="detail-con-box">
-                                            <h5 class="h5 detail-con-tit">입력예제1</h5>
-                                            <p class="detail-con-txt">
-                                            </p><pre><h4 style="font-size: 1.6rem">10:00 19:00
+<div class="table-wrap">
+
+<table class="table"><caption>언어별 시간/메모리 표</caption>
+
+<thead>
+
+<tr>
+
+<th scope="col" id="t-lang">언어</th>
+
+<th scope="col" id="t-time">시간</th>
+
+<th scope="col" id="t-memory">메모리</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td headers="t-lang">JavaScript</td>
+
+<td headers="t-time">1초</td>
+
+<td headers="t-memory">1024MB</td>
+
+</tr>
+
+<tr>
+
+<td headers="t-lang">C</td>
+
+<td headers="t-time">1초</td>
+
+<td headers="t-memory">1024MB</td>
+
+</tr>
+
+<tr>
+
+<td headers="t-lang">C++</td>
+
+<td headers="t-time">1초</td>
+
+<td headers="t-memory">1024MB</td>
+
+</tr>
+
+<tr>
+
+<td headers="t-lang">Java</td>
+
+<td headers="t-time">1초</td>
+
+<td headers="t-memory">1024MB</td>
+
+</tr>
+
+<tr>
+
+<td headers="t-lang">Python</td>
+
+<td headers="t-time">1초</td>
+
+<td headers="t-memory">1024MB</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div>
+
+<div style="font-size: 1.6rem"><span>당신은 인사팀 직원으로, 각 직원의 근태를 확인하고자 한다.</span> <span>당신의 회사는 자율출퇴근제를 실시하기 때문에 각 직원이 정확히 몇 시에 출근하는 것은 중요하지 않고, 총 근로 시간이 몇 분인지가 중요하다. 총 근로 시간이 법정근로시간을 초과하지 않아야 하면서, 회사와 직원 사이에 계약한 시간 이상이어야 하기 때문이다.</span> <span>직원이 하루 동안 근무한 시간은 출근 시각과 퇴근 시각 사이의 시간으로 정의한다. 이 문제에서는 식사 시간 등 근무 외 시간을 근무 시간에서 제외하지 않음에 유의하라.</span> <span>월요일부터 금요일까지 휴가를 쓰지 않은 직원이 매 요일 언제 출근하고 언제 퇴근했는지가 주어질 때, 이 직원이 5일 동안 총 몇 분을 근무했는지를 구하는 프로그램을 작성하라.</span></div>
+
+</div>
+
+</div>
+
+<div class="detail-con-box">##### 제약조건 # <span>직원은 밤을 새서 일하지 않았다. 즉, 출근 시각과 퇴근 시각은 00:00 이후, 24:00 이전에 이루어졌다.</span> <span>출퇴근 시각은 HH:MM과 같은 형식으로 주어진다.</span> <span>HH는 00, 01, 02, .., 22, 23 중 하나이다.</span> <span>MM는 00, 01, 02, .., 58, 59 중 하나이다.</span> <span>직원은 매일 1분 이상은 일하였다.</span></div>
+
+<div class="detail-con-box">##### 입력형식 # <span>첫 번째 줄에는 월요일에 출근한 시각과 월요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span> <span>두 번째 줄에는 화요일에 출근한 시각과 화요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span> <span>세 번째 줄에는 수요일에 출근한 시각과 수요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span> <span>네 번째 줄에는 목요일에 출근한 시각과 목요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span> <span>다섯 번째 줄에는 금요일에 출근한 시각과 금요일에 퇴근한 시각이 공백 하나를 사이로 두고 주어진다.</span></div>
+
+<div class="detail-con-box">##### 출력형식 # <span>첫 번째 줄에 직원의 총 근무 시간을 분 단위로 출력한다.</span></div>
+
+<div>
+
+<div class="detail-con-box">##### 입력예제1
+
+<pre>
+#### 10:00 19:00
 09:00 15:00
 10:00 11:00
 11:00 22:00
-09:00 15:00</h4></pre>
-                                        </div>
-                                        <div class="detail-con-box">
-                                            <h5 class="h5 detail-con-tit">출력예제1</h5>
-                                            <p class="detail-con-txt">
-                                            </p><pre><h4 style="font-size: 1.6rem">1980</h4></pre>
-                                        </div>
-                                    </div>
+09:00 15:00
 
-                                    <div>
-                                        <div class="detail-con-box">
-                                            <h5 class="h5 detail-con-tit">입력예제2</h5>
-                                            <p class="detail-con-txt">
-                                            </p><pre><h4 style="font-size: 1.6rem">09:17 18:34
-09:17 18:34
-09:17 18:34
-09:17 18:34
-09:17 18:34</h4></pre>
-                                        </div>
-                                        <div class="detail-con-box">
-                                            <h5 class="h5 detail-con-tit">출력예제2</h5>
-                                            <p class="detail-con-txt">
-                                            </p><pre><h4 style="font-size: 1.6rem">2785</h4></pre>
-                                        </div>
-                                    </div>
+</pre>
 
-                                    <div>
-                                        <div class="detail-con-box">
-                                            <h5 class="h5 detail-con-tit">입력예제3</h5>
-                                            <p class="detail-con-txt">
-                                            </p><pre><h4 style="font-size: 1.6rem">09:17 19:24
+</div>
+
+<div class="detail-con-box">##### 출력예제1
+
+<pre>
+#### 1980
+
+</pre>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="detail-con-box">##### 입력예제2
+
+<pre>
+#### 09:17 18:34
+09:17 18:34
+09:17 18:34
+09:17 18:34
+09:17 18:34
+
+</pre>
+
+</div>
+
+<div class="detail-con-box">##### 출력예제2
+
+<pre>
+#### 2785
+
+</pre>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="detail-con-box">##### 입력예제3
+
+<pre>
+#### 09:17 19:24
 10:11 18:45
 09:34 18:27
 10:47 15:33
-08:47 18:32</h4></pre>
-                                        </div>
-                                        <div class="detail-con-box">
-                                            <h5 class="h5 detail-con-tit">출력예제3</h5>
-                                            <p class="detail-con-txt">
-                                            </p><pre><h4 style="font-size: 1.6rem">2525</h4></pre>
-                                        </div>
-                                    </div>
-                                </div>
+08:47 18:32
+
+</pre>
+
+</div>
+
+<div class="detail-con-box">##### 출력예제3
+
+<pre>
+#### 2525
+
+</pre>
+
+</div>
+
+</div>
+
+</div>
